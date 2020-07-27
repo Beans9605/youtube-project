@@ -25,7 +25,12 @@ mongoose.connect(config.mongoURI, {
 
 
 
+app.get('/api/hello', (req, res) => {
 
+
+
+    res.send("안녕하세요 ~ ");
+})
 
 
 // 기본 경로로 접근하면 response에 hello world! 문자열을 보내줌
