@@ -25,12 +25,12 @@ mongoose.connect(config.mongoURI, {
 
 
 
-app.get('/api/hello', (req, res) => {
+// app.get('/api/hello', (req, res) => {
 
 
 
-    res.send("안녕하세요 ~ ");
-})
+//     res.send("안녕하세요 ~ ");
+// })
 
 
 // 기본 경로로 접근하면 response에 hello world! 문자열을 보내줌
@@ -80,7 +80,8 @@ app.get('/api/users/auth', auth, (req, res)=> {
         name : req.user.name,
         lastname : req.user.lastname,
         role : req.user.role,
-        image : req.user.image
+        image : req.user.image,
+        isAuth : true
     })
 })
 
@@ -94,7 +95,7 @@ app.get('/api/users/logout', auth, (req, res)=> {
 })
 
 // 회원가입을 위한 route
-app.post('/api/users//register', (req, res) => {
+app.post('/api/users/register', (req, res) => {
     // 회원 가입할 때 필요한 정보들을 client에서 가져오면
     // 그것들을 데이터 베이스에 넣어준다.
     const user = new User(req.body) 
