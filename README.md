@@ -1,3 +1,6 @@
+# Node.JS ReactJS Study
+인프런 강의 따라배우는 node.js를 참조함
+
 # Node, Express.js
 
 node는 엔진이라고 보면, 자동차를 만드는게 Express.js임
