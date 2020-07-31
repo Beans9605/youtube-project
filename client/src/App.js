@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 
+import Nav from './components/views/NavBar/NavBar'
 import LandingPage from './components/views/LandingPage/LangdingPage'
 import LoginPage from './components/views/LoginPage/LoginPage'
 import RegisterPage from './components/views/RegisterPage/RegisterPage' 
@@ -24,6 +25,7 @@ function App() {
           you have multiple routes, but you want only one
           of them to render at a time
         */}
+        <Nav />
         <Switch>
           {/* 아무나 출입 가능하다는 의미로 auth 옵션에 null로 줌 */}
           <Route exact path="/" component={Auth(LandingPage, null)} />

@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import axios from 'axios'
 import { withRouter } from 'react-router-dom'
-
+import Navbar from '../NavBar/NavBar'
 
 function LangdingPage(props) {
 
@@ -19,6 +19,8 @@ function LangdingPage(props) {
 
 
     return (
+
+    <div>    
         <div style ={{display:'flex', justifyContent:'center', alignItems:"center",
         width:"100%", height:"100vh"}}>
             <h2>시작페이지</h2>
@@ -29,6 +31,7 @@ function LangdingPage(props) {
                 로그아웃
             </button>
         </div>
+    </div>
     )
 }
 

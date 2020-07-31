@@ -12,6 +12,7 @@ import promiseMiddleware from 'redux-promise';
 import ReduxThunk from 'redux-thunk';
 
 import Reducer from './_reducers';
+
 // 그냥 Store는 객체 밖에 생성 못하지만 promise와 ReudxThunk로 다른 형식도 받게 만듦
 const createStoreWithMiddleware = applyMiddleware(promiseMiddleware, ReduxThunk)(createStore)
 
